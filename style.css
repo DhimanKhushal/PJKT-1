@@ -9,6 +9,25 @@ body {
   width: 100%;
   height: 100%;
 }
+#minicircle{
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 99999;
+  border-radius: 50%;
+  background-color: #fff; 
+}
+
+.bounding{
+  width: fit-content;
+ overflow: hidden;
+}
+
+.boundingel{
+  transform: translateY(100%);
+}
+
 #main {
   width: 100%;
 }
@@ -51,6 +70,9 @@ body {
 }
 .blocktext {
   width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .blocktext h5 {
   text-align: right;
@@ -60,6 +82,9 @@ body {
 
 #smallheads {
   margin-top: 100px;
+display: flex;
+flex-direction: column;
+align-items: end;
 }
 #smallheads h5 {
   text-transform: uppercase;
